@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="./style.css">
+    <title>bank-project</title>
+</head>
+<body>
+    <section class="container mx-auto w-10/12 bg-green-400 mt-1 rounded">
+        <div class="login_form flex items-center justify-center flex-col pt-2">
+            <input class="login-email mb-3 w-8/12 p-2 rounded outline-none text-red-600" type="email" placeholder="Enter Your Email">
+            <input class="login-password mb-3 w-8/12 p-2 rounded outline-none text-red-600" type="password" placeholder="Enter Your Password">
+            <button class="submit-btn text-white w-4/12 text-xl bg-pink-600 p-2 rounded mb-2 hover:bg-pink-500">Log In</button>
+        </div>
+    </section>
+
+    <!-- <section class="container mx-auto w-10/12 bg-blue-400 mt-7 rounded">
+        <div class="amount flex justify-evenly">
+            <div class="deposit bg-yellow-300 py-3 px-7 mt-2 rounded text-black">
+                <h2 class="text-2xl">Total Deposit <br> <span class="text-green-700">$</span><span class="text-green-700">00</span></h2>
+            </div>
+            <div class="Withdraw bg-red-500 py-3 px-7 mt-2 rounded text-black">
+                <h2 class="text-2xl text-green-600">Total Withdraw <br> <span class="text-white">$</span><span class="text-white">00</span></h2>
+            </div>
+            <div class="total-amount bg-white py-3 px-7 mt-2 rounded text-black"">
+                <h2 class="text-2xl">Total amount <br> <span class="text-green-700">$</span><span class="text-green-700">00</span></h2>
+            </div>
+        </div>
+        <div class="input-amount flex items-center justify-evenly mt-8">
+            <div class="deposit-amount flex items-center flex-col">
+                <input class="w-96 p-3 outline-none rounded" type="text" placeholder="Deposit your amount">
+                <button class="bg-green-800 w-6/12 p-2 my-3 text-white text-xl rounded hover:bg-green-600 transition">Deposit</button>
+            </div>
+            <div class="Withdraw-amount flex items-center flex-col">
+                <input class="w-96 p-3 outline-none rounded" type="text" placeholder="withdraw your amount">
+                <button class="bg-red-700 w-6/12 p-2 my-3 text-white text-xl rounded hover:bg-red-600 transition">Withdraw</button>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <script src="./bank.js"></script>
+</body>
+</html>
